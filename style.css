@@ -38,7 +38,7 @@
 }
 
 .card.flipped {
-  transform: rotateY(45deg);
+  transform: rotateY(180deg);
 }
 
 .front, .back {
