@@ -29,8 +29,8 @@ body {
 
 .card {
   height: 10vw;
-  aspect-ratio: 2/3;
-  border-radius: 10px;
+  aspect-ratio: 62/88;
+  border-radius: 1vw;
   background-color: white;
   position: relative;
   transform-style: preserve-3d;
