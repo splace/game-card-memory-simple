@@ -28,7 +28,7 @@ body {
 }
 
 .card {
-  height: 10vw;
+  height: 12vw;
   aspect-ratio: 62/88;
   border-radius: 1vw;
   background-color: white;
@@ -38,7 +38,7 @@ body {
 }
 
 .front-image {
-  width: 90vw;
+  width: 10vw;
 }
 
 .card.flipped {
