@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  color: white;
+  color: light-green;
 }
 
 .actions {
@@ -38,7 +38,7 @@ body {
 }
 
 .front-image {
-  width: 10vw;
+  width: 8vw;
 }
 
 .card.flipped {
