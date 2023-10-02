@@ -13,7 +13,7 @@ body {
 }
 
 .card {
-  height: 12vw;
+  width: 9vw;
   aspect-ratio: 62/88;
   border-radius: 1vw;
   background-color: white;
