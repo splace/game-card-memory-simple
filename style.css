@@ -1,6 +1,7 @@
 body {
   background-color: black;
-  color: light-green;
+  color: lightgreen;
+  justify-content: center;
 }
 
 .actions {
