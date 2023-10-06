@@ -34,13 +34,5 @@
     {
         "image": "./assets/grapes.png",
         "name": "Grapes"
-    },
-    {
-        "image": "./assets/freya.jpg",
-        "name": "Freya"
-    },
-    {
-        "image": "./assets/eleanor.jpg",
-        "name": "Eleanor"
     }
 ]
