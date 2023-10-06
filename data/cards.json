@@ -36,6 +36,10 @@
         "name": "Orange"
     },
     {
+        "image": "./assets/chili.png",
+        "name": "Chilli"
+    },
+    {
         "image": "./assets/grapes.png",
         "name": "Grapes"
     }
