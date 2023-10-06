@@ -4,35 +4,39 @@
         "name": "Freya"
     },
     {
-        "image": "./assets/grapes.png",
-        "name": "grapes"
-    },
-    {
         "image": "./assets/eleanor.jpg",
         "name": "Eleanor"
     },
     {
         "image": "./assets/lemon.png",
-        "name": "lemon"
+        "name": "Lemon"
     },
     {
         "image": "./assets/pineapple.png",
-        "name": "pineapple"
+        "name": "Pineapple"
     },
     {
         "image": "./assets/strawberry.png",
-        "name": "strawberry"
+        "name": "Strawberry"
     },
     {
         "image": "./assets/tomato.png",
-        "name": "tomato"
+        "name": "Tomato"
     },
     {
         "image": "./assets/watermelon.png",
-        "name": "watermelon"
+        "name": "Watermelon"
     },
     {
         "image": "./assets/cherries.png",
-        "name": "cherries"
+        "name": "Cherries"
+    },
+    {
+        "image": "./assets/orange.png",
+        "name": "Orange"
+    },
+    {
+        "image": "./assets/grapes.png",
+        "name": "Grapes"
     }
 ]
