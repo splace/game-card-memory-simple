@@ -1,13 +1,5 @@
 [
     {
-        "image": "./assets/freya.jpg",
-        "name": "Freya"
-    },
-    {
-        "image": "./assets/eleanor.jpg",
-        "name": "Eleanor"
-    },
-    {
         "image": "./assets/lemon.png",
         "name": "Lemon"
     },
@@ -44,3 +36,11 @@
         "name": "Grapes"
     }
 ]
+   {
+        "image": "./assets/freya.jpg",
+        "name": "Freya"
+    },
+    {
+        "image": "./assets/eleanor.jpg",
+        "name": "Eleanor"
+    },
