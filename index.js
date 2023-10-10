@@ -55,8 +55,7 @@ function flipCard() {
   }
 
   secondCard = this;
-  score++;
-  document.querySelector(".score").textContent = score;
+  document.querySelector(".score").textContent = score++;
   lockBoard = true;
 
   checkForMatch();
@@ -81,19 +80,4 @@ function unflipCards() {
     secondCard.classList.remove("flipped");
     resetBoard();
   }, 1000);
-}
-
-function resetBoard() {
-  firstCard = null;
-  secondCard = null;
-  lockBoard = false;
-}
-
-function restart() {
-  resetBoard();
-  shuffleCards();
-  score = 0;
-  document.querySelector(".score").textContent = score;
-  gridContainer.innerHTML = "";
-  generateCards();
 }
