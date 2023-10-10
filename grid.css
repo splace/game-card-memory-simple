@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(6, 12vw);
-  grid-template-rows: repeat(2, calc(12vw / 2 * 3));
+  grid-template-columns: repeat(6, 10vw);
+  grid-template-rows: repeat(2, calc(10vw / 2 * 3));
 }
