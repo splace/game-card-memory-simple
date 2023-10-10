@@ -2,9 +2,11 @@ const gridContainer = document.querySelector(".grid-container");
 let cards = [];
 let firstCard, secondCard;
 let lockBoard = false;
-let score = 0;
+let attempts = 0;
+let fails = 0;
+let successes = 0;
 
-document.querySelector(".score").textContent = score;
+document.querySelector(".score").textContent = attempts;
 
 fetch("./data/cards.json")
   .then((res) => res.json())
@@ -46,31 +48,26 @@ function generateCards() {
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
-
   this.classList.add("flipped");
-
   if (!firstCard) {
     firstCard = this;
     return;
   }
-
   secondCard = this;
-  document.querySelector(".score").textContent = score++;
+  document.querySelector(".score").textContent = attempts++;
   lockBoard = true;
-
   checkForMatch();
 }
 
 function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
-
   isMatch ? disableCards() : unflipCards();
+  isMatch ? successes++ : fails++;
 }
 
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
-
   resetBoard();
 }
 
