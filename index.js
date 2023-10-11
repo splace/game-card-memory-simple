@@ -5,8 +5,8 @@ let lockBoard = false;
 let attempts = 0;
 let fails = 0;
 let successes = 0;
-
-document.querySelector(".score").textContent = attempts;
+let scoreBoard = document.querySelector(".score")
+scoreBoard.textContent = attempts;
 
 fetch("./data/cards.json")
   .then((res) => res.json())
@@ -54,7 +54,7 @@ function flipCard() {
     return;
   }
   secondCard = this;
-  document.querySelector(".score").textContent = attempts++;
+  scoreBoard.textContent = attempts++;
   lockBoard = true;
   checkForMatch();
 }
