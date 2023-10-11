@@ -63,7 +63,7 @@ function flipCard() {
 function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
   isMatch ? disableCards() : unflipCards();
-  isMatch ? scs.textConetent = ++successes : fls.textContent = ++fails;
+  isMatch ? scs.textContent = ++successes : fls.textContent = ++fails;
 }
 
 function disableCards() {
