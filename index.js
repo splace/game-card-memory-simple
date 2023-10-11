@@ -5,8 +5,9 @@ let lockBoard = false;
 let attempts = 0;
 let fails = 0;
 let successes = 0;
-let scoreBoard = document.getElementById("attempts")
-scoreBoard.textContent = attempts;
+const ats = document.getElementById("attempts")
+const scs = document.getElementById("successes")
+const fls = document.getElementById("fails")
 
 fetch("./data/cards.json")
   .then((res) => res.json())
@@ -54,7 +55,7 @@ function flipCard() {
     return;
   }
   secondCard = this;
-  scoreBoard.textContent = attempts++;
+  ats.textContent = ++attempts;
   lockBoard = true;
   checkForMatch();
 }
@@ -62,7 +63,7 @@ function flipCard() {
 function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
   isMatch ? disableCards() : unflipCards();
-  isMatch ? successes++ : fails++;
+  isMatch ? scs.textConetent = ++successes : fls.textContent = ++fails;
 }
 
 function disableCards() {
