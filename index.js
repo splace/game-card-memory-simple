@@ -1,4 +1,4 @@
-const gridContainer = document.querySelector(".grid-container");
+const gridContainer = document.getElementById("grid-container");
 let cards = [];
 let firstCard, secondCard;
 let lockBoard = false;
