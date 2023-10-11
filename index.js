@@ -5,7 +5,7 @@ let lockBoard = false;
 let attempts = 0;
 let fails = 0;
 let successes = 0;
-let scoreBoard = document.querySelector(".score")
+let scoreBoard = document.getElementById("attempts")
 scoreBoard.textContent = attempts;
 
 fetch("./data/cards.json")
