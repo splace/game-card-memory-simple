@@ -1,12 +1,19 @@
-body, button {
+body {
   background-color: black;
   color: lightgreen;
   justify-content: center;
 }
 
+button {
+  position:absolute;
+  top:0;
+  right:0;
+}
+
 h1 {
     text-align:center;
 }
+
 .card {
   width: 9vw;
   aspect-ratio: 62/88;
