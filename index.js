@@ -1,13 +1,7 @@
-const gridContainer = document.getElementById("grid-container");
 let cards = [];
 let firstCard, secondCard;
 let lockBoard = false;
-let attempts = 0;
-let fails = 0;
-let successes = 0;
-const ats = document.getElementById("attempts")
-const scs = document.getElementById("successes")
-const fls = document.getElementById("fails")
+const gridContainer = document.getElementById("grid-container");
 const gos = document.getElementById("goes")
 
 fetch("./data/cards.json")
@@ -56,7 +50,6 @@ function flipCard() {
     return;
   }
   secondCard = this;
-  ats.textContent = ++attempts;
   lockBoard = true;
   checkForMatch();
 }
@@ -64,7 +57,6 @@ function flipCard() {
 function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
   isMatch ? disableCards() : unflipCards();
-  isMatch ? scs.textContent = ++successes : fls.textContent = ++fails;
   isMatch ? gos.textContent += "✅": gos.textContent += "❎";
 }
 
