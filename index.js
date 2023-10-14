@@ -8,6 +8,7 @@ let successes = 0;
 const ats = document.getElementById("attempts")
 const scs = document.getElementById("successes")
 const fls = document.getElementById("fails")
+const gos = document.getElementById("goes")
 
 fetch("./data/cards.json")
   .then((res) => res.json())
@@ -64,6 +65,7 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
   isMatch ? disableCards() : unflipCards();
   isMatch ? scs.textContent = ++successes : fls.textContent = ++fails;
+  isMatch ? gos.textContent += "✅": gos.textContent += "❎";
 }
 
 function disableCards() {
