@@ -3,6 +3,7 @@ let firstCard, secondCard;
 let lockBoard = false;
 const gridContainer = document.getElementById("grid-container");
 const gos = document.getElementById("goes")
+const golen = document.getElementById("len")
 
 fetch("./data/cards.json")
   .then((res) => res.json())
@@ -58,6 +59,7 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
   isMatch ? disableCards() : unflipCards();
   isMatch ? gos.textContent += "✅": gos.textContent += "❎";
+  golen.textContent=len(gos.textContent);
 }
 
 function disableCards() {
