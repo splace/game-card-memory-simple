@@ -59,7 +59,7 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
   isMatch ? disableCards() : unflipCards();
   isMatch ? gos.textContent += "✅": gos.textContent += "❎";
-  golen.textContent=len(gos.textContent);
+  golen.textContent=" ="+len(gos.textContent);
 }
 
 function disableCards() {
