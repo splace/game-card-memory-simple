@@ -57,9 +57,6 @@ function flipCard() {
 
 function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
-  firstCard = null;
-  secondCard = null;
-  lockBoard = false;
   isMatch ? disableCards() : unflipCards();
   isMatch ? gos.textContent += "✅": gos.textContent += "❎";
   golen.textContent=gos.textContent.length;
@@ -68,12 +65,18 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
+  firstCard = null;
+  secondCard = null;
+  lockBoard = false;
 }
 
 function unflipCards() {
   setTimeout(() => {
     firstCard.classList.remove("flipped");
     secondCard.classList.remove("flipped");
-  }, 1000);
+    firstCard = null;
+  secondCard = null;
+  lockBoard = false;
+}, 1000);
 }
 
