@@ -60,7 +60,7 @@ function checkForMatch() {
   firstCard = null;
   secondCard = null;
   lockBoard = false;
-} isMatch ? disableCards() : unflipCards();
+  isMatch ? disableCards() : unflipCards();
   isMatch ? gos.textContent += "✅": gos.textContent += "❎";
   golen.textContent=gos.textContent.length;
 }
