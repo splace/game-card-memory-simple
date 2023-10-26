@@ -60,7 +60,7 @@ function checkForMatch() {
   isMatch ? disableCards() : unflipCards();
   isMatch ? gos.textContent += "✅": gos.textContent += "❎";
   golen.textContent=gos.textContent.length;
-  golen.textContent+=golen.textContent.split("...✅").length-1;
+  golen.textContent+=gos.textContent.split("...✅").length-1;
 }
 
 function disableCards() {
