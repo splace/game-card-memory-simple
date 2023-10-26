@@ -60,8 +60,14 @@ function checkForMatch() {
   isMatch ? disableCards() : unflipCards();
   isMatch ? gos.textContent += "✅": gos.textContent += "❎";
   golen.textContent=gos.textContent.length;
-  golen.textContent+=gos.textContent.split("✅").length==cards.length/2+1;
-}
+  if gos.textContent.split("✅").length==cards.length/2+1{
+    for (let card of document.getElementsByClassName("card")){
+      card.classList.remove("flipped");
+      card.addEventListener("click", flipCard);
+      }
+    shuffleCards()
+    }
+  }
 
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
