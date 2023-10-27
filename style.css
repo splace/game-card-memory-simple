@@ -2,6 +2,7 @@ body, button {
   background-color: black;
   color: lightgreen;
   justify-content: center;
+  font-family: Brush Script MT, cursive;
   font-stretch: condensed;
 }
 
