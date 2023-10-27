@@ -61,6 +61,7 @@ function checkForMatch() {
   isMatch ? gos.textContent += "✅": gos.textContent += "❎";
   golen.textContent=gos.textContent.length;
   if (gos.textContent.split("✅").length==cards.length/2+1){
+    gos.textContent="";
     for (let card of document.getElementsByClassName("card")){
       card.classList.remove("flipped");
       card.addEventListener("click", flipCard);
