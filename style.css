@@ -4,6 +4,7 @@ body, button {
   justify-content: center;
   font-family: Brush Script MT, cursive;
   font-stretch: condensed;
+  text-shadow: -1px -1px 0 white,1px -1px 0 white,-1px 1px 0 white,1px 1px 0 white;
 }
 
 button {
