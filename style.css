@@ -17,6 +17,10 @@ h1 {
     text-align:center;
 }
 
+#goes {
+  font-size:smaller;  
+}
+
 .card {
   width: 9vw;
   aspect-ratio: 62/88;
