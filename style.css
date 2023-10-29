@@ -5,9 +5,8 @@ body, button {
   font-family: Brush Script MT, cursive;
   font-stretch: condensed;
   --b: .1vw;
-  --mb: -.1vw;
   --c: green;
-  text-shadow: var(--mb) var(--mb) 0 var(--c),var(--b) var(--mb) 0 var(--c),var(--mb) var(--b) 0 var(--c),var(--b) var(--b) 0 var(--c);
+  text-shadow: -var(--b) -var(-b) 0 var(--c),var(--b) -var(--b) 0 var(--c),-var(--b) var(--b) 0 var(--c),var(--b) var(--b) 0 var(--c);
 }
 
 button {
