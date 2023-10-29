@@ -2,5 +2,5 @@
 
 Click image to play, click card to turn card over, unmatching pairs turn back. 
 
-[![Image of Game](https://splace.github.io/memory-card-game/MemoryCardGame.png)](https://splace.github.io/memory-card-game/index.html) 
+[![Image of Game](https://splace.github.io/game-card-memory-simple/MemoryCardGame.png)](https://splace.github.io/game-card-memory-simple/index.html) 
 
