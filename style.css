@@ -1,9 +1,9 @@
 body, button {
   background-color: black;
-  color: lightgreen;
   justify-content: center;
   font-family: Brush Script MT, cursive;
   font-stretch: condensed;
+  font-weight: bold;
   --b: .2vw;
   --mb: -.2vw;
   --c: green;
@@ -74,7 +74,7 @@ root {
 }
 
 .card .back {
-  background-image: --card-pattern;
+  background-image: var(--card-pattern);
   background-position: center center;
   background-size: cover;
   backface-visibility: hidden;
