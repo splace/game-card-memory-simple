@@ -6,7 +6,7 @@ body, button {
   font-stretch: condensed;
   --b: .1vw;
   --c: green;
-  text-shadow: -var(--b) -var(-b) 0 var(--c),var(--b) -var(--b) 0 var(--c),-var(--b) var(--b) 0 var(--c),var(--b) var(--b) 0 var(--c);
+  text-shadow: -var(--b) -var(--b) 0 var(--c),var(--b) -var(--b) 0 var(--c),-var(--b) var(--b) 0 var(--c),var(--b) var(--b) 0 var(--c);
 }
 
 button {
