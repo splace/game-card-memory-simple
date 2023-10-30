@@ -21,6 +21,10 @@ h1 {
   text-shadow: var(--mb) var(--mb) 0 var(--c),var(--b) var(--mb) 0 var(--c),var(--mb) var(--b) 0 var(--c),var(--b) var(--b) 0 var(--c);
 }
 
+#history {
+  color:white;
+}
+
 #goes {
   font-stretch:condensed;
   font-size:smaller;
