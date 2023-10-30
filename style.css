@@ -68,7 +68,7 @@ h1 {
 }
 
 .card .back {
-  background-image: var(--cardpattern);
+  background-image: var(--back);
   background-position: center center;
   background-size: cover;
   backface-visibility: hidden;
