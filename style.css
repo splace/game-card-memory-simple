@@ -3,11 +3,15 @@ body {
   justify-content: center;
 }
 
-button::before {
-  content:"☰";
-  position:absolute;
+button {
+ position:absolute;
   top:0;
   left:0;
+}
+
+button::before {
+  content:"☰";
+
 }
 
 
