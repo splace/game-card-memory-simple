@@ -13,6 +13,10 @@ button::before {
   content:"☰";
 }
 
+button:hover {
+  background-color: yellow;
+}
+
 h1 {
     text-align:center;
     font-size:75vw/12;
