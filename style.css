@@ -15,7 +15,7 @@ h1 {
     font-size:75vw/12;
     font-weight:bold;
   font-family: Brush Script MT, cursive;
-  --b: 1vw;
+  --b: 1pt;
   --mb: calc(-1*var(--b));
   --c: green;
   text-shadow: var(--mb) var(--mb) 0 var(--c),var(--b) var(--mb) 0 var(--c),var(--mb) var(--b) 0 var(--c),var(--b) var(--b) 0 var(--c);
