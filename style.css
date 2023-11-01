@@ -39,6 +39,7 @@ h1 {
   width: 9vw;
   aspect-ratio: 62/88;
   border-radius: 1vw;
+  margin: .05vw;
   background-color: white;
   position: relative;
   transform-style: preserve-3d;
@@ -57,13 +58,13 @@ h1 {
     backface-visibility: hidden;
     position: absolute;
     border-radius: .5vw;
-    top: 0;
+   top: 0;
     left: 0;
     height: 100%;
     width: 100%;
 }
 
-.card .front {
+.card.front {
   display: flex;
   justify-content: center;
   align-items: center;
